@@ -1,8 +1,15 @@
 .root {
-    -fx-background-radius: 0 0 20 20;
-    -fx-background-color: #3b3b3b;
+    /*-fx-background-radius: 0 0 20 20;*/
+    -fx-background-color: black;
 }
 
 .buttons {
-    -fx-background-color: grey;
+    /*-fx-background-color: #ffc0cb;*/
+    -fx-background-radius: 20
+}
+
+.display {
+    -fx-background-color: #ffc0cb;
+    -fx-padding: 20;
+    -fx-background-radius: 20;
 }
