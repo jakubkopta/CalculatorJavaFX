@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculatorjavafx.HelloController">
+   <children>
+      <Label fx:id="display" alignment="CENTER_RIGHT" layoutX="25.0" prefHeight="100.0" prefWidth="350.0" text="0.0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Button fx:id="btnAC" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="AC" />
+      <Button fx:id="btnSwitch" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="+/-" />
+      <Button fx:id="btnPlus" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="+" />
+      <Button fx:id="btnMinus" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="-" />
+      <Button fx:id="btnMultiply" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="*" />
+      <Button fx:id="btn3" layoutX="200.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="3" />
+      <Button fx:id="btn6" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="6" />
+      <Button fx:id="btn9" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="9" />
+      <Button fx:id="btn5" layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="5" />
+      <Button fx:id="btn2" layoutX="100.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="2" />
+      <Button fx:id="btn8" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="8" />
+      <Button fx:id="btnEqual" layoutX="300.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="=" />
+      <Button fx:id="btnComa" layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="," />
+      <Button fx:id="btnDivide" layoutX="300.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="/" />
+      <Button fx:id="btnPercent" layoutX="200.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" text="\%" />
+      <Button fx:id="btn1" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="1" />
+      <Button fx:id="btn4" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="4" />
+      <Button fx:id="btn0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="200.0" text="0" />
+      <Button fx:id="btn7" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" text="7" />
+   </children>
+</AnchorPane>
