@@ -15,23 +15,23 @@
             <Insets />
          </opaqueInsets></Label>
       <Button fx:id="btnAC" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="AC" />
-      <Button fx:id="btnSwitch" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="+/-" />
+      <Button fx:id="btn1" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="1" />
+      <Button fx:id="btn2" layoutX="100.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="2" />
+      <Button fx:id="btn3" layoutX="200.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="3" />
+      <Button fx:id="btn4" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="4" />
+      <Button fx:id="btn5" layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="5" />
+      <Button fx:id="btn6" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="6" />
+      <Button fx:id="btn7" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="7" />
+      <Button fx:id="btn8" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="8" />
+      <Button fx:id="btn9" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="9" />
+      <Button fx:id="btn0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="200.0" styleClass="buttons" stylesheets="@style.css" text="0" />
       <Button fx:id="btnPlus" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="+" />
       <Button fx:id="btnMinus" layoutX="300.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="-" />
       <Button fx:id="btnMultiply" layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="*" />
-      <Button fx:id="btn3" layoutX="200.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="3" />
-      <Button fx:id="btn6" layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="6" />
-      <Button fx:id="btn9" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="9" />
-      <Button fx:id="btn5" layoutX="100.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="5" />
-      <Button fx:id="btn2" layoutX="100.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="2" />
-      <Button fx:id="btn8" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="8" />
-      <Button fx:id="btnEqual" layoutX="300.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="=" />
-      <Button fx:id="btnComa" layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="," />
       <Button fx:id="btnDivide" layoutX="300.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="/" />
+      <Button fx:id="btnEqual" layoutX="300.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="=" />
+      <Button fx:id="btnComma" layoutX="200.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="," />
+      <Button fx:id="btnSwitch" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="+/-" />
       <Button fx:id="btnPercent" layoutX="200.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="\%" />
-      <Button fx:id="btn1" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="1" />
-      <Button fx:id="btn4" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="4" />
-      <Button fx:id="btn0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="200.0" styleClass="buttons" stylesheets="@style.css" text="0" />
-      <Button fx:id="btn7" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="100.0" prefWidth="100.0" styleClass="buttons" stylesheets="@style.css" text="7" />
    </children>
 </AnchorPane>
