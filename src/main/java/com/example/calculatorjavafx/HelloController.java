@@ -5,6 +5,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+
 
 public class HelloController {
     @FXML
@@ -32,32 +35,32 @@ public class HelloController {
     void onSymbolClicked(MouseEvent event) {
         String symbol = ((Button)event.getSource()).getId().replace("btn","");
         switch (symbol) {
-            case "Equal" -> {
-                double num2 = Double.parseDouble(display.getText());
-                switch (operator) {
-                    case "+" -> display.setText((num1 + num2) + "");
-                    case "-" -> display.setText((num1 - num2) + "");
-                    case "*" -> display.setText((num1 * num2) + "");
-                    case "/" -> display.setText((num1 / num2) + "");
+            case "Equal":
+                try {
+                    double result = getResult();
+                    displayResult(result);
+                    operator = ".";
+                } catch (ArithmeticException e ) {
+                    display.setText("ERROR");
                 }
-                operator = ".";
-            }
-            case "AC" -> {
+                break;
+            case "AC":
                 display.setText(String.valueOf(0));
                 operator = ".";
-            }
-            case "Switch" -> {
+                break;
+            case "Switch":
                 double currentValue = Double.parseDouble(display.getText());
                 display.setText(currentValue == 0 ? display.getText() : String.valueOf(-currentValue).replaceAll("\\.0*$", ""));
-            }
-            case "Percent" ->
+                break;
+            case "Percent":
                     display.setText(Double.parseDouble(display.getText()) == 0 ? display.getText() : String.valueOf(Double.parseDouble(display.getText()) * 0.01).replaceAll("\\.0*$", ""));
-            case "Comma" -> {
+                break;
+            case "Comma":
                 if (!display.getText().contains(".")) {
                     display.setText(display.getText() + ".");
                 }
-            }
-            default -> {
+                break;
+            default:
                 switch (symbol) {
                     case "Plus" -> operator = "+";
                     case "Minus" -> operator = "-";
@@ -66,8 +69,34 @@ public class HelloController {
                 }
                 num1 = Double.parseDouble(display.getText());
                 display.setText(String.valueOf(0));
+                break;
+        }
+    }
+
+    private double getResult() {
+        double num2 = Double.parseDouble(display.getText());
+        double result = 0.0;
+        switch (operator) {
+            case "+" -> result = (num1 + num2);
+            case "-" -> result = (num1 - num2);
+            case "*" -> result = (num1 * num2);
+            case "/" -> {
+                if (num2 == 0) {
+                    throw new ArithmeticException("Cannot divide by 0");
+                }
+                result = (num1 / num2);
             }
         }
+        return result;
+    }
+
+    private void displayResult(double result) {
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
+        symbols.setDecimalSeparator('.');
+        DecimalFormat decimalFormat = new DecimalFormat("#.############", symbols);
+        String formattedResult = decimalFormat.format(result);
+
+        display.setText(formattedResult);
     }
 
 }
