@@ -1,15 +1,22 @@
 .root {
-    /*-fx-background-radius: 0 0 20 20;*/
-    -fx-background-color: black;
+    -fx-background-color: grey;
 }
 
 .buttons {
-    /*-fx-background-color: #ffc0cb;*/
-    -fx-background-radius: 20
+    -fx-background-radius: 8
+}
+.buttons:hover {
+    -fx-background-color: #d3d3d3;
+    -fx-background-radius: 8
+}
+
+.buttons:pressed {
+    -fx-background-color: grey;
+    -fx-background-radius: 8
 }
 
 .display {
-    -fx-background-color: #ffc0cb;
+    -fx-background-color: #fadadd;
     -fx-padding: 20;
     -fx-background-radius: 20;
 }
